@@ -339,10 +339,7 @@ function prepareOrder() {
     const total =
         document.getElementById("total").textContent;
 
-    alert(
-        "Your ticket request total is $" + total +
-        ". Please send your Zelle payment to mpecou07@gmail.com (Mirna Pecou)."
-    );
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfqOeXdkOJdwaAE9JTatfGZ5VHjB-cl0pvNBG00hgcUFdC9_g/viewform";
 }
 
 calculateTotal();
