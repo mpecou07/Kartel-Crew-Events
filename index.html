@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kartel Crew Bus Ride - 507 Rides</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+      radial-gradient(circle at top, #173c3c 0%, #071515 38%, #050505 75%);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 760px;
+    margin: auto;
+    padding: 30px 18px 60px;
+}
+
+.hero {
+    text-align: center;
+    padding: 35px 15px 25px;
+}
+
+.crown {
+    font-size: 52px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 42px;
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #35d6cf;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.signature {
+    font-style: italic;
+    color: #d4af37;
+    margin-top: 8px;
+}
+
+.card {
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(212,175,55,.45);
+    border-radius: 18px;
+    padding: 24px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.event-info {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.event-info strong {
+    color: #35d6cf;
+}
+
+.prices {
+    display: flex;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.price {
+    flex: 1;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 15px;
+    background: rgba(0,0,0,.35);
+    border: 1px solid #35d6cf;
+}
+
+.price .amount {
+    display: block;
+    color: #d4af37;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #d4af37;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background: #111;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.total {
+    text-align: center;
+    font-size: 25px;
+    color: #35d6cf;
+    font-weight: bold;
+    margin: 22px 0;
+}
+
+.payment {
+    text-align: center;
+    background: rgba(212,175,55,.10);
+    border: 1px solid #d4af37;
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+.payment-email {
+    color: #35d6cf;
+    font-size: 20px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 17px;
+    border-radius: 12px;
+    background: #d4af37;
+    color: #080808;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.notice {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-top: 18px;
+}
+
+footer {
+    text-align: center;
+    color: #999;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 33px;
+    }
+
+    .prices {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="crown">♛</div>
+        <h1>KARTEL</h1>
+        <div class="subtitle">BUS RIDE TICKETS</div>
+        <div class="signature">507 Vibes</div>
+    </div>
+
+    <div class="card event-info">
+
+        <h2>Kartel Crew Bus Ride - 507 Rides</h2>
+
+        📅 <strong>Saturday, October 3, 2026</strong><br>
+        🕙 <strong>10:00 PM - 2:00 AM</strong><br>
+        📍 <strong>Wynwood, Miami</strong><br><br>
+
+        🎧 Music • Party • 507 Vibes 🎧
+
+        <div class="prices">
+
+            <div class="price">
+                SINGLE
+                <span class="amount">$90</span>
+                Per Person
+            </div>
+
+            <div class="price">
+                COUPLE
+                <span class="amount">$160</span>
+                Two People
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Reserve Your Tickets</h2>
+
+        <label>Your Full Name</label>
+        <input type="text" id="buyerName" placeholder="First and last name">
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="Your phone number">
+
+        <label>Ticket Type</label>
+
+        <select id="ticketType" onchange="calculateTotal()">
+            <option value="90">Single Ticket - $90</option>
+            <option value="160">Couple Ticket - $160</option>
+        </select>
+
+        <label>Quantity</label>
+
+        <select id="quantity" onchange="calculateTotal()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label>Names & Phone Numbers for Ticket Holders</label>
+
+        <textarea id="guests"
+        placeholder="Enter the name and phone number of each person attending."></textarea>
+
+        <div class="total">
+            Total: $<span id="total">90</span>
+        </div>
+
+        <div class="payment">
+
+            <h2>Payment</h2>
+
+            Send payment through <strong>Zelle</strong> to:
+
+            <p class="payment-email">
+                mpecou07@gmail.com
+            </p>
+
+            <strong>Mirna Pecou</strong>
+
+            <p>
+                Please include your name in the Zelle memo.
+            </p>
+
+        </div>
+
+        <button onclick="prepareOrder()">
+            Review Ticket Request
+        </button>
+
+        <div class="notice">
+            Tickets are not confirmed until payment has been received and
+            your reservation has been verified. Please verify all names and
+            phone numbers before submitting your request.
+        </div>
+
+    </div>
+
+    <footer>
+        Kartel Crew • 507 Rides • 507 Vibes
+    </footer>
+
+</div>
+
+<script>
+
+function calculateTotal() {
+
+    const price =
+        Number(document.getElementById("ticketType").value);
+
+    const quantity =
+        Number(document.getElementById("quantity").value);
+
+    document.getElementById("total").textContent =
+        price * quantity;
+}
+
+function prepareOrder() {
+
+    const name =
+        document.getElementById("buyerName").value.trim();
+
+    const phone =
+        document.getElementById("phone").value.trim();
+
+    const guests =
+        document.getElementById("guests").value.trim();
+
+    if (!name || !phone || !guests) {
+
+        alert(
+            "Please complete your name, phone number, and ticket holder information."
+        );
+
+        return;
+    }
+
+    const total =
+        document.getElementById("total").textContent;
+
+    alert(
+        "Your ticket request total is $" + total +
+        ". Please send your Zelle payment to mpecou07@gmail.com (Mirna Pecou)."
+    );
+}
+
+calculateTotal();
+
+</script>
+
+</body>
+</html>
