@@ -1,417 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kartel Crew Bus Ride - 507 Vibes</title>
+  <title>Cuentos de la Cripta | Kartel Crew Halloween Bus Ride</title>
 
-<style>
-* {
-    box-sizing: border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #000000;
-    color: white;
-    min-height: 100vh;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
 
-.container {
-    max-width: 760px;
-    margin: auto;
-    padding: 30px 18px 60px;
-}
+    .container {
+      width: 92%;
+      max-width: 760px;
+      margin: auto;
+      padding: 25px 0 45px;
+    }
 
-.hero {
-    text-align: center;
-    padding: 35px 15px 25px;
-}
+    .logo {
+      width: 230px;
+      max-width: 75%;
+      margin: 5px auto 20px;
+      display: block;
+    }
 
-.crown {
-    font-size: 52px;
-    margin-bottom: 5px;
-}
-
-    .kartel-logo {
-    display: block;
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    margin: 0 auto 18px;
-}
-
-h1 {
-    margin: 0;
-    font-size: 42px;
-    color: #d4af37;
-    letter-spacing: 1px;
-}
-
-.subtitle {
-    color: #35d6cf;
-    font-size: 23px;
-    font-weight: bold;
-    margin-top: 8px;
-}
-
-.signature {
-    font-style: italic;
-    color: #d4af37;
-    margin-top: 8px;
-}
-
-.card {
-    background: rgba(255,255,255,.07);
-    border: 1px solid rgba(212,175,55,.45);
-    border-radius: 18px;
-    padding: 24px;
-    margin-top: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.35);
-}
-
-.event-info {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-.event-info strong {
-    color: #35d6cf;
-}
-
-.prices {
-    display: flex;
-    gap: 15px;
-    margin-top: 22px;
-}
-
-.price {
-    flex: 1;
-    text-align: center;
-    padding: 20px 10px;
-    border-radius: 15px;
-    background: rgba(0,0,0,.35);
-    border: 1px solid #35d6cf;
-}
-
-.price .amount {
-    display: block;
-    color: #d4af37;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-h2 {
-    color: #d4af37;
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-top: 16px;
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 14px;
-    border-radius: 10px;
-    border: 1px solid #555;
-    background: #111;
-    color: white;
-    font-size: 16px;
-}
-
-textarea {
-    min-height: 100px;
-    resize: vertical;
-}
-
-.total {
-    text-align: center;
-    font-size: 25px;
-    color: #35d6cf;
-    font-weight: bold;
-    margin: 22px 0;
-}
-
-.payment {
-    text-align: center;
-    background: rgba(212,175,55,.10);
-    border: 1px solid #d4af37;
-    padding: 20px;
-    border-radius: 14px;
-    margin-top: 20px;
-}
-
-.payment-email {
-    color: #35d6cf;
-    font-size: 20px;
-    font-weight: bold;
-    word-break: break-word;
-}
-
-button {
-    width: 100%;
-    border: none;
-    padding: 17px;
-    border-radius: 12px;
-    background: #d4af37;
-    color: #080808;
-    font-size: 19px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 22px;
-}
-
-button:hover {
-    opacity: .9;
-}
-
-.notice {
-    font-size: 13px;
-    color: #ccc;
-    line-height: 1.5;
-    margin-top: 18px;
-}
-
-footer {
-    text-align: center;
-    color: #999;
-    margin-top: 35px;
-    font-size: 13px;
-}
-
-@media (max-width: 550px) {
     h1 {
-        font-size: 33px;
+      margin: 8px 0 0;
+      font-size: 38px;
+      color: #d9ff00;
+      text-transform: uppercase;
     }
 
-    .prices {
-        flex-direction: column;
+    .subtitle {
+      margin: 5px 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #e73cff;
     }
-}
-.event-chiva {
-    display: block;
-    width: 100%;
-    max-width: 620px;
-    height: auto;
-    margin: 20px auto 28px;
-    border-radius: 18px;
-    filter:
-        drop-shadow(0 0 18px rgba(0, 229, 229, 0.20))
-        drop-shadow(0 0 22px rgba(255, 183, 0, 0.18));
-}
 
-@media (max-width: 550px) {
-    .event-chiva {
-        max-width: 100%;
-        margin: 15px auto 22px;
-        border-radius: 14px;
+    .flyer {
+      width: 100%;
+      max-width: 650px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 14px;
+      border: 2px solid #8e2de2;
+      box-shadow: 0 0 25px rgba(231,60,255,.35);
     }
-}
 
-    .zelle-qr {
-    text-align: center;
-    margin: 22px auto;
-}
+    .event-card {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 16px;
+      padding: 22px;
+      margin: 25px auto;
+    }
 
-.zelle-qr p {
-    margin-bottom: 12px;
-}
+    .event-card h2 {
+      color: #d9ff00;
+      margin-top: 0;
+    }
 
-.zelle-qr img {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 12px;
-}
+    .detail {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 5px 0;
+    }
 
+    .price-box {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
 
+    .price {
+      background: #181818;
+      border: 2px solid #e73cff;
+      border-radius: 12px;
+      padding: 14px 25px;
+      min-width: 200px;
+      font-size: 19px;
+    }
 
+    .price strong {
+      display: block;
+      color: #d9ff00;
+      font-size: 27px;
+      margin-top: 4px;
+    }
 
-.contact-info {
-    text-align: center;
-    margin: 28px auto 10px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 193, 7, 0.35);
-    font-size: 17px;
-    line-height: 1.8;
-}
+    .included {
+      background: #15091c;
+      border: 1px solid #8e2de2;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 20px 0;
+      line-height: 1.8;
+      font-size: 17px;
+    }
 
-.contact-info strong {
-    color: #ffc107;
-    font-size: 20px;
-}
+    .warning {
+      color: #d9ff00;
+      font-weight: bold;
+      font-size: 21px;
+      margin: 20px 0;
+    }
 
-.contact-info a {
-    color: #00e5e5;
-    font-weight: bold;
-    text-decoration: none;
-}
-</style>
+    .reserve-button {
+      display: inline-block;
+      width: 100%;
+      max-width: 500px;
+      padding: 18px 20px;
+      margin: 12px auto;
+      background: linear-gradient(90deg,#8e2de2,#e73cff);
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 0 18px rgba(231,60,255,.4);
+    }
+
+    .payment {
+      background: #fff;
+      color: #111;
+      border-radius: 16px;
+      padding: 22px;
+      margin-top: 28px;
+    }
+
+    .payment h2 {
+      margin-top: 0;
+      color: #111;
+    }
+
+    .payment-email {
+      font-size: 19px;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    .qr {
+      width: 220px;
+      max-width: 80%;
+      margin: 15px auto;
+      display: block;
+    }
+
+    .important {
+      background: #211029;
+      border-left: 5px solid #d9ff00;
+      padding: 15px;
+      margin: 22px 0;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .contact {
+      margin-top: 25px;
+      font-size: 17px;
+    }
+
+    .contact a {
+      color: #d9ff00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 35px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+      }
+
+      .detail {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-    <div class="hero">
-        <img src="Kartel%20Crew%20Logo.png" alt="Kartel Crew - 507 Vibes" class="kartel-logo">
+    <img
+      src="Kartel Crew Logo.png"
+      alt="Kartel Crew 507 Vibes"
+      class="logo"
+    >
+
+    <h1>Cuentos de la Cripta</h1>
+    <div class="subtitle">🎃 HALLOWEEN BUS RIDE 🎃</div>
+
+    <img
+      src="Cuentos-de-la-Cripta.png"
+      alt="Cuentos de la Cripta Halloween Bus Ride"
+      class="flyer"
+    >
+
+    <div class="event-card">
+
+      <h2>🎃 EVENT DETAILS 🎃</h2>
+
+      <div class="detail">
+        📅 <strong>Saturday, October 31, 2026</strong>
+      </div>
+
+      <div class="detail">
+        🕙 <strong>10:00 PM – 1:00 AM</strong>
+      </div>
+
+      <div class="detail">
+        📍 <strong>Route: Wynwood, Miami</strong>
+      </div>
+
+      <div class="detail">
+        👻 <strong>Wear Your Costume & Be Part of the Story!</strong>
+      </div>
+
+      <div class="price-box">
+
+        <div class="price">
+          SINGLE TICKET
+          <strong>$90</strong>
+        </div>
+
+        <div class="price">
+          COUPLE TICKET
+          <strong>$160</strong>
+        </div>
+
+      </div>
+
+      <div class="included">
+        🍺 First Beers & Drinks Included<br>
+        🍾 Bring Your Favorite Drinks<br>
+        🧊 Cups & Ice Included<br>
+        🎶 Music • Halloween • Party • 507 Vibes
+      </div>
+
+      <div class="warning">
+        ⚠️ LIMITED SPOTS — RESERVE EARLY! ⚠️
+      </div>
+
+      <!-- We will insert the NEW Halloween reservation form link here -->
+      <a
+        href="#"
+        class="reserve-button"
+        id="reserveButton"
+      >
+        🎟️ RESERVE YOUR SPOT
+      </a>
+
     </div>
 
-    <div class="card event-info">
+    <div class="payment">
 
-        <img src="Chiva.png" alt="Kartel Crew Bus Ride - 507 Vibes" class="event-chiva">
+      <h2>💳 PAYMENT</h2>
 
-        <div class="prices">
+      <p>
+        After submitting your reservation, send your payment through Zelle.
+      </p>
 
-            <div class="price">
-                SINGLE
-                <span class="amount">$90</span>
-                Per Person
-            </div>
+      <p class="payment-email">
+        Zelle: mpecou07@gmail.com
+      </p>
 
-            <div class="price">
-                COUPLE
-                <span class="amount">$160</span>
-                Two People
-            </div>
+      <p>
+        Mirna Pecou
+      </p>
 
-        </div>
+      <img
+        src="MP - Citi QR Code.png"
+        alt="Zelle QR Code"
+        class="qr"
+      >
+
+      <div class="important">
+        <strong>IMPORTANT:</strong><br>
+        Please include the purchaser's name in the Zelle memo.
+        Your reservation is not confirmed until payment has been
+        received and verified.
+      </div>
 
     </div>
 
-    <div class="card">
-
-        <h2>Reserve Your Tickets</h2>
-
-        <label>Your Full Name</label>
-        <input type="text" id="buyerName" placeholder="First and last name">
-
-        <label>Phone Number</label>
-        <input type="tel" id="phone" placeholder="Your phone number">
-
-        <label>Ticket Type</label>
-
-        <select id="ticketType" onchange="calculateTotal()">
-            <option value="90">Single Ticket - $90</option>
-            <option value="160">Couple Ticket - $160</option>
-        </select>
-
-        <label>Quantity</label>
-
-        <select id="quantity" onchange="calculateTotal()">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-
-        <label>Names & Phone Numbers for Ticket Holders</label>
-
-        <textarea id="guests"
-        placeholder="Enter the name and phone number of each person attending."></textarea>
-
-        <div class="total">
-            Total: $<span id="total">90</span>
-        </div>
-
-        <div class="payment">
-
-            <h2>Payment</h2>
-
-            Send payment through <strong>Zelle</strong> to:
-
-            <p class="payment-email">
-                mpecou07@gmail.com
-            </p>
-
-            <strong>Mirna Pecou</strong>
-
-            <p>
-                Please include your name in the Zelle memo.
-            </p>
-<div class="zelle-qr">
-    <p><strong>Or scan with your banking app:</strong></p>
-    <img src="MP%20-%20Citi%20QR%20Code.png" alt="Zelle QR Code for Mirna Pecou">
-</div>
-        </div>
-
-        <button onclick="prepareOrder()">
-            Review Ticket Request
-        </button>
-
-        <div class="notice">
-            Tickets are not confirmed until payment has been received and
-            your reservation has been verified. Please verify all names and
-            phone numbers before submitting your request.
-        </div>
-
-        <div class="contact-info">
-    <strong>Questions?</strong><br>
-    📱 Call or Text:
-    <a href="tel:9547701993">954-770-1993</a>
-</div>
-
+    <div class="contact">
+      Questions? Call or text:
+      <a href="tel:9547701993">954-770-1993</a>
     </div>
 
     <footer>
-        Kartel Crew • 507 Vibes
+      KARTEL CREW • 507 VIBES<br>
+      CUENTOS DE LA CRIPTA • HALLOWEEN BUS RIDE
     </footer>
 
-</div>
-
-<script>
-
-function calculateTotal() {
-
-    const price =
-        Number(document.getElementById("ticketType").value);
-
-    const quantity =
-        Number(document.getElementById("quantity").value);
-
-    document.getElementById("total").textContent =
-        price * quantity;
-}
-
-function prepareOrder() {
-
-    const name =
-        document.getElementById("buyerName").value.trim();
-
-    const phone =
-        document.getElementById("phone").value.trim();
-
-    const guests =
-        document.getElementById("guests").value.trim();
-
-    if (!name || !phone || !guests) {
-
-        alert(
-            "Please complete your name, phone number, and ticket holder information."
-        );
-
-        return;
-    }
-
-    const total =
-        document.getElementById("total").textContent;
-
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfqOeXdkOJdwaAE9JTatfGZ5VHjB-cl0pvNBG00hgcUFdC9_g/viewform";
-}
-
-calculateTotal();
-
-</script>
+  </div>
 
 </body>
 </html>
